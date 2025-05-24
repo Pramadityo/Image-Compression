@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def compress_channel(channel, k):
     """Melakukan kompresi pada 1 channel gambar menggunakan SVD"""
     U, S, Vt = np.linalg.svd(channel, full_matrices=False)
-    # Simpan hanya k komponen terbesar
+    # Simpan hanya k komponen terbesarrr
     U_k = U[:, :k]
     S_k = np.diag(S[:k])
     Vt_k = Vt[:k, :]
